@@ -45,4 +45,25 @@ class persona {
     public function setDocumento($documento) {
         $this->documento = $documento;
     }
+
+
+    public function getNombre(){
+    return $this->nombre;
+    }
+
+    public function getApellido(){
+        return $this->apellido;
+    }
+
+    public function getEdad(){
+        return $this->edad;
+    }
+
+    public function getCorreo(){
+        return $this->correo;
+    }
+
+    public function getDocumento(){
+        return $this->documento;
+    }
 }
