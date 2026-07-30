@@ -1,13 +1,14 @@
 <?php
 
 class persona {
-    // CAMBIO A PRIVADO: Solo la clase puede acceder o modificar estas propiedades
+    // 1. Atributos privados
     private $nombre;
     private $apellido;
     private $edad;
     private $correo;
     private $documento;
 
+    // 2. Constructor
     public function __construct($nombre, $apellido, $edad, $correo, $documento) {
         $this->nombre = $nombre;
         $this->apellido = $apellido;
@@ -24,11 +25,24 @@ class persona {
         echo "Documento: " . $this->documento . "<br><br>";
     }
 
+  
+    public function setNombre($nombre) {
+        $this->nombre = $nombre;
+    }
+
+    public function setApellido($apellido) {
+        $this->apellido = $apellido;
+    }
+
     public function setEdad($edad) {
         $this->edad = $edad;
     }
 
-    public function getEdad() {
-        return $this->edad;
+    public function setCorreo($correo) {
+        $this->correo = $correo;
+    }
+
+    public function setDocumento($documento) {
+        $this->documento = $documento;
     }
 }
