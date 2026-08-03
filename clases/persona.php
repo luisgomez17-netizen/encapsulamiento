@@ -17,6 +17,25 @@ class persona {
         $this->documento = $documento;
     }
 
+    public function setNombre($nombre){
+        if (is_string($nombre) && trim ($nombre) !== ""){
+            $this->nombre = $nombre;
+        }
+    }
+
+    public function setApellido($apellido){
+        if (is_string($apellido) && trim ($apellido) !== ""){
+            $this->apellido = $apellido;
+        }
+    }
+
+    public function setEdad($edad){
+        if (is_numeric($edad) && $edad >=0 && $edad <=120){
+            $this->edad = $edad;
+        }
+    }
+
+    
     public function mostrar() {
         echo "Nombre: " . $this->nombre . "<br>";
         echo "Apellido: " . $this->apellido . "<br>";
@@ -25,26 +44,6 @@ class persona {
         echo "Documento: " . $this->documento . "<br><br>";
     }
 
-  
-    public function setNombre($nombre) {
-        $this->nombre = $nombre;
-    }
-
-    public function setApellido($apellido) {
-        $this->apellido = $apellido;
-    }
-
-    public function setEdad($edad) {
-        $this->edad = $edad;
-    }
-
-    public function setCorreo($correo) {
-        $this->correo = $correo;
-    }
-
-    public function setDocumento($documento) {
-        $this->documento = $documento;
-    }
 
 
     public function getNombre(){

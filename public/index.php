@@ -13,7 +13,7 @@ $persona3->mostrar();
 echo "<hr>";
 
 $persona1->setNombre("Carlos");
-$persona2->setEdad(38);
+$persona2->setEdad(25);
 $persona3->setApellido("Castillo");
 
 $persona1->mostrar();
@@ -25,4 +25,12 @@ echo "<hr";
 
 echo "El nuevo nombre de persona1 es: " . $persona1->getNombre() . "<br>";
 echo "La nueva edad de persona2 es: " . $persona2->getEdad() . "<br>";
+
+echo "<hr>";
+
+$persona1->setNombre(" Carlos gongg hijs  ");
+$persona1->setEdad(13);
+
+$persona1->mostrar();
+
 
